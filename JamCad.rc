@@ -1,0 +1,1280 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\JamCad.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\JamCad.ico"
+
+IDR_ProjectTYPE         ICON                    "res\\JamCadDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDB_PIN_LEFT            BITMAP                  "res\\pinleft.bmp"
+
+IDB_PIN_RIGHT           BITMAP                  "res\\pinRight.bmp"
+
+IDB_PINUP               BITMAP                  "res\\PinUp.bmp"
+
+IDB_PINDOWN             BITMAP                  "res\\PinDown.bmp"
+
+IDB_LINE                BITMAP                  "res\\Line.bmp"
+
+IDB_CLOCK               BITMAP                  "res\\Clock.bmp"
+
+IDB_LINEINV             BITMAP                  "res\\LineInv.bmp"
+
+IDB_CLOCKINV            BITMAP                  "res\\ClockInv.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_BUTTON_DEBUG
+    BUTTON      ID_BUTTON_ZOOMIN
+    BUTTON      ID_BUTTON_ZOOMOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "New"
+        BEGIN
+            MENUITEM "Project",                     32773
+            MENUITEM "Schematic",                   32774
+            MENUITEM "Library",                     IDM_FILE_NEW_LIB
+            MENUITEM "Front Panel",                 32777
+        END
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About JamCad...",            ID_APP_ABOUT
+    END
+END
+
+IDR_ProjectTYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "New"
+        BEGIN
+            MENUITEM "Projejct",                    IDM_FILE_NEW_PROJECT
+            MENUITEM "Schematic",                   IDM_FILE_NEW_SCHEMATIC
+            MENUITEM "Library",                     IDM_FILE_NEW_LIB
+            MENUITEM "Front Panel",                 IDM_FILE_NEW_FRONTPANEL
+        END
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About JamCad...",            ID_APP_ABOUT
+    END
+END
+
+IDR_JamCadSchType MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "New"
+        BEGIN
+            MENUITEM "Projejct",                    IDM_FILE_NEW_PROJECT
+            MENUITEM "Schematic",                   IDM_FILE_NEW_SCHEMATIC
+            MENUITEM "Library",                     IDM_FILE_NEW_LIB
+            MENUITEM "Front Panel",                 IDM_FILE_NEW_FRONTPANEL
+        END
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "Place"
+    BEGIN
+        MENUITEM "Part",                        32781
+        MENUITEM "Wire",                        32782
+        MENUITEM "BUS",                         IDM_SCH__PLACE_BUSS
+        MENUITEM "Junction",                    32785
+        MENUITEM "Bus Entry",                   32786
+        MENUITEM "Net Label",                   32787
+        MENUITEM "Power",                       32788
+        MENUITEM "Schematic Sheet",             32789
+        MENUITEM "Sheet Port",                  32790
+        MENUITEM "Sheet Pin",                   32791
+        MENUITEM SEPARATOR
+        MENUITEM "Text",                        32792
+        MENUITEM "Line",                        32793
+        MENUITEM "Rectangle",                   32794
+        MENUITEM "Ellipse",                     32795
+        MENUITEM "Polygon",                     IDM_SCH_PLACE_POLYGON
+        MENUITEM "Filled Polygon",              IDM_SCH_PLACE_FILLEDPOLY
+        MENUITEM "Bitmap",                      32800
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About JamCad...",            ID_APP_ABOUT
+    END
+END
+
+IDR_JamCadLibType MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "New"
+        BEGIN
+            MENUITEM "Projejct",                    IDM_FILE_NEW_PROJECT
+            MENUITEM "Schematic",                   IDM_FILE_NEW_SCHEMATIC
+            MENUITEM "Library",                     IDM_FILE_NEW_LIB
+            MENUITEM "Front Panel",                 IDM_FILE_NEW_FRONTPANEL
+        END
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About JamCad...",            ID_APP_ABOUT
+    END
+END
+
+IDR_FrontCad_TYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "New"
+        BEGIN
+            MENUITEM "Projejct",                    IDM_FILE_NEW_PROJECT
+            MENUITEM "Schematic",                   IDM_FILE_NEW_SCHEMATIC
+            MENUITEM "Library",                     IDM_FILE_NEW_LIB
+            MENUITEM "Front Panel",                 IDM_FILE_NEW_FRONTPANEL
+        END
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Place"
+    BEGIN
+        MENUITEM "Line",                        32805
+        MENUITEM "Rectangle",                   32806
+        MENUITEM "Rounded Rect",                IDM_PLACE_ROUNDEDRECT
+        MENUITEM "Ellipse",                     32809
+        MENUITEM "Arc",                         32810
+        MENUITEM "Arc Center",                  32811
+        MENUITEM "Polygon",                     32812
+        MENUITEM "Filled Polygon",              32813
+        MENUITEM "Library Part",                32814
+        MENUITEM "Bitmap",                      32815
+        MENUITEM SEPARATOR
+        MENUITEM "Round Hole",                  32816
+        MENUITEM "Round Hole 1 Flat",           32817
+        MENUITEM "Round Hole 2 Flat",           IDM_PLACE_ROUNDHOLE2FLAT
+        MENUITEM "Rectangular Hole",            IDM_PLACE_RECTANGULARHOLE
+        MENUITEM SEPARATOR
+        MENUITEM "Origin",                      IDM_PLACE_ORIGIN
+        MENUITEM "Dimension",                   IDM_PLACE_DIMENSION
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About JamCad...",            ID_APP_ABOUT
+    END
+END
+
+IDR_JamCadSchLibPart_TYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "New"
+        BEGIN
+            MENUITEM "Projejct",                    IDM_FILE_NEW_PROJECT
+            MENUITEM "Schematic",                   IDM_FILE_NEW_SCHEMATIC
+            MENUITEM "Library",                     IDM_FILE_NEW_LIB
+            MENUITEM "Front Panel",                 IDM_FILE_NEW_FRONTPANEL
+        END
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "Place"
+    BEGIN
+        MENUITEM "Text",                        IDM_PLACE_TEXT
+        MENUITEM "Line",                        IDM_PLACE_LINE
+        MENUITEM "Rectangle",                   IDM_PLACE_RECTANGLE
+        MENUITEM "Rounded Rectangle",           IDM_PLACE_ROUNDEDRECT
+        MENUITEM "Arrow",                       32834
+        MENUITEM "Arc",                         IDM_PLACE_ARC
+        MENUITEM "Arc Center Point",            IDM_PLACE_ARCCENTER
+        MENUITEM "Ellipse",                     IDM_PLACE_ELLIPSE
+        MENUITEM "Polygon",                     IDM_SCH_PLACE_POLYGON
+        MENUITEM "Filled Polygon",              IDM_SCH_PLACE_FILLEDPOLY
+        MENUITEM "Bitmap",                      IDM_SCH_PLACE_BITMAP
+        MENUITEM "Pin",                         32826
+        MENUITEM "Reference Point",             32827
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About JamCad...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About JamCad"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "JamCad, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DIALOG_FRONTCADUTIL DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Front Cad Utility Pane"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "EXIT",IDOK,253,156,50,14
+    LTEXT           "Static",IDC_STATIC,34,26,121,85,SS_NOTIFY
+END
+
+IDD_DIALOG_PROPERTYEDITOR DIALOGEX 0, 0, 408, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Property Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,351,7,50,14
+    PUSHBUTTON      "New Column",IDC_BUTTON_PROPEDITOR_NEWCOLUMN,6,7,50,14
+    PUSHBUTTON      "Display",IDC_BUTTON_PROPERTYEDITOR_DISPLAY,66,7,50,14
+    PUSHBUTTON      "Apply",IDC_BUTTON_PROPERTYEDITOR_APPLY,134,7,50,14
+    PUSHBUTTON      "Delete Property",IDC_BUTTON_PROPERTYEDITOR_DELETEPROP,198,7,60,14
+    LTEXT           "Static",IDC_STATIC_PROPERTYEDITOR_GRID,7,30,394,138,SS_NOTIFY | WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_PIN_PROPERTIES DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pin Property Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,253,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,191,7,50,14
+    LTEXT           "Static",IDC_STATIC_PREVIEW,182,64,121,106,WS_BORDER
+    LTEXT           "Pin Name",IDC_STATIC,15,10,32,8
+    EDITTEXT        IDC_EDIT_PIN_NAME,67,7,94,14,ES_AUTOHSCROLL
+    LTEXT           "Pin Number",IDC_STATIC,15,27,39,8
+    EDITTEXT        IDC_EDIT_PIN_NUMBER,67,24,94,14,ES_AUTOHSCROLL
+    LTEXT           "Orientation",IDC_STATIC,15,43,37,8
+    LTEXT           "Electrical Type",IDC_STATIC,15,59,48,8
+    LTEXT           "Graphic Style",IDC_STATIC,15,75,44,8
+    COMBOBOX        IDC_COMBO_ELECTRICAL_TYPE,67,57,94,44,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ORIENTATION,67,41,94,45,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GRAPHIC_STYLE,67,73,94,72,CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Auto Increment Settings",IDC_STATIC,7,91,163,79
+    CONTROL         "Enable Auto Increment",IDC_CHECK_ENABLE_AUTOINC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,102,90,10
+    LTEXT           "Label Increment",IDC_STATIC,18,119,54,8
+    LTEXT           "Pin Number Increment",IDC_STATIC,18,134,74,8
+    EDITTEXT        IDC_EDIT_AUTOINC_LABEL,114,116,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AUTOINC_PIN,114,131,40,14,ES_AUTOHSCROLL
+    LTEXT           "Pin Length",IDC_STATIC,175,43,35,8
+    EDITTEXT        IDC_EDIT_PINLEN,214,40,89,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_TEXT_PROPERTIES DIALOGEX 0, 0, 239, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Text Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,23,129,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,102,129,50,14
+    EDITTEXT        IDC_EDIT_TEXT_STRING,7,7,198,14,ES_AUTOHSCROLL
+    CONTROL         "Trasnparent",IDC_CHECK_TRANSPARENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,28,56,10
+    CONTROL         "",IDC_STATIC_BACKGROUND_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,203,30,19,16
+    CONTROL         "",IDC_STATIC_TEXT_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,118,30,19,16
+    LTEXT           "Text Color",IDC_STATIC,77,34,35,8
+    LTEXT           "Background Color",IDC_STATIC,140,34,58,8
+    LTEXT           "Text Height",IDC_STATIC,15,58,38,8
+    LTEXT           "Text Width",IDC_STATIC,15,75,36,8
+    EDITTEXT        IDC_EDIT_TEXT_HEIGHT,62,55,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TEXT_WIDTH,62,72,40,14,ES_AUTOHSCROLL
+    LTEXT           "Font",IDC_STATIC,18,92,15,8
+    PUSHBUTTON      "Button1",IDC_BUTTON_FONT,46,89,73,14
+    COMBOBOX        IDC_COMBO_FONTWEIGHT,124,90,70,52,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ANGLE,54,107,40,14,ES_AUTOHSCROLL
+    LTEXT           "Angle",IDC_STATIC,20,110,19,8
+END
+
+IDD_DIALOG_LINE_ATTRB DIALOGEX 0, 0, 130, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Line Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,69,50,14
+    LTEXT           "Line Width",IDC_STATIC,19,16,35,8
+    EDITTEXT        IDC_EDIT_LINE_WIDTH,72,13,40,14,ES_AUTOHSCROLL
+    LTEXT           "Line Color",IDC_STATIC,19,41,34,8
+    CONTROL         "",IDC_STATIC_LINE_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,82,37,20,16
+END
+
+IDD_DIALOG_RECTPROPERTIES DIALOGEX 0, 0, 142, 91
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rectangle Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,70,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,70,50,14
+    LTEXT           "Outline Width",IDC_STATIC,11,19,45,8
+    LTEXT           "OutLine Color",IDC_STATIC,11,34,45,8
+    LTEXT           "Fill Color",IDC_STATIC,11,49,30,8
+    CONTROL         "",IDC_STATIC_FILL_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,74,46,16,14
+    CONTROL         "",IDC_STATIC_LINE_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,74,31,16,14
+    EDITTEXT        IDC_EDIT_LINE_WIDTH,62,16,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_ELLIPSE_PROPERTIES DIALOGEX 0, 0, 149, 96
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ellipse Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,23,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,75,50,14
+    LTEXT           "Outline Width",IDC_STATIC,27,18,45,8
+    LTEXT           "Outline Color",IDC_STATIC,27,34,43,8
+    LTEXT           "Fill Color",IDC_STATIC,27,51,30,8
+    EDITTEXT        IDC_EDIT_LINE_WIDTH,90,15,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC_FILLCOLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,100,47,20,16
+    CONTROL         "",IDC_STATIC_LINECOLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,100,30,20,16
+END
+
+IDD_DIALOG_POLYGONPROPERTIES DIALOGEX 0, 0, 147, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Polygon Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,83,60,50,14
+    LTEXT           "Line Width",IDC_STATIC,17,16,35,8
+    LTEXT           "Line Color",IDC_STATIC,17,38,34,8
+    CONTROL         "",IDC_STATI_LINE_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,86,35,20,14
+    EDITTEXT        IDC_EDIT_LINEWIDTH,76,13,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_ROUNDEDRECT_PROPERTIES DIALOGEX 0, 0, 147, 126
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rounded Rectangle Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,16,105,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,105,50,14
+    LTEXT           "Line Width",IDC_STATIC,17,13,35,8
+    LTEXT           " Corner Radius X",IDC_STATIC,17,29,56,8
+    LTEXT           "Line Color",IDC_STATIC,17,67,34,8
+    LTEXT           "Fill Color",IDC_STATIC,17,89,30,8
+    EDITTEXT        IDC_EDIT_LINEWIDTH,82,10,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CORNERRADIUS,82,26,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC_LINECOLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,90,62,23,18
+    CONTROL         "",IDC_STATIC_FILLCOLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,90,84,23,18
+    LTEXT           "Corner Radius Y",IDC_STATIC,17,48,54,8
+    EDITTEXT        IDC_EDIT_CORNERRADIUS_Y,82,45,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_BITMAP_PROPERTIES DIALOGEX 0, 0, 208, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bitmap Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,24,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,60,50,14
+    LTEXT           "File Name",IDC_STATIC,15,19,34,8
+    CONTROL         "Maintain Aspect Ratio",IDC_CHECK_MAINTAIN_ASPECT_RATIO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,36,86,10
+    EDITTEXT        IDC_EDIT_FILENAME,58,16,134,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Choose File",IDC_BUTTON_CHOOSE_FILE,122,34,50,14
+END
+
+IDD_DIALOG_ARCPROPERTIES DIALOGEX 0, 0, 203, 144
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Arc Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,56,123,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,123,50,14
+    LTEXT           "Line Width",IDC_STATIC,10,13,35,8
+    EDITTEXT        IDC_EDIT_LINEWIDTH,90,10,40,14,ES_AUTOHSCROLL
+    LTEXT           "Line Color",IDC_STATIC,10,33,34,8
+    CONTROL         "",IDC_STATIC_LINECOLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,100,28,21,18
+    LTEXT           "Start Angle X",IDC_STATIC,10,54,44,8
+    EDITTEXT        IDC_EDIT_START_X,58,51,40,14,ES_AUTOHSCROLL
+    LTEXT           "Start Angle Y",IDC_STATIC,102,54,44,8
+    EDITTEXT        IDC_EDIT_START_Y,154,51,40,14,ES_AUTOHSCROLL
+    LTEXT           "End Angle X",IDC_STATIC,10,71,40,8
+    EDITTEXT        IDC_EDIT_END_X,58,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "End Angle Y",IDC_STATIC,102,71,40,8
+    EDITTEXT        IDC_EDIT_END_Y,154,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "Start Angle Degrees",IDC_STATIC,10,89,67,8
+    EDITTEXT        IDC_EDIT_START_ANGLE,90,86,40,14,ES_AUTOHSCROLL
+    LTEXT           "End Angle Degrees",IDC_STATIC,10,106,63,8
+    EDITTEXT        IDC_EDIT_END_ANGLE,90,103,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_ARCCENTPROPERTIES DIALOGEX 0, 0, 203, 144
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Arc Center Referenced  Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,56,123,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,123,50,14
+    LTEXT           "Line Width",IDC_STATIC,10,13,35,8
+    EDITTEXT        IDC_EDIT_LINEWIDTH,90,10,40,14,ES_AUTOHSCROLL
+    LTEXT           "Line Color",IDC_STATIC,10,33,34,8
+    CONTROL         "",IDC_STATIC_LINECOLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,100,28,21,18
+    LTEXT           "Start Angle X",IDC_STATIC,10,54,44,8
+    EDITTEXT        IDC_EDIT_START_X,58,51,40,14,ES_AUTOHSCROLL
+    LTEXT           "Start Angle Y",IDC_STATIC,102,54,44,8
+    EDITTEXT        IDC_EDIT_START_Y,154,51,40,14,ES_AUTOHSCROLL
+    LTEXT           "End Angle X",IDC_STATIC,10,71,40,8
+    EDITTEXT        IDC_EDIT_END_X,58,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "End Angle Y",IDC_STATIC,102,71,40,8
+    EDITTEXT        IDC_EDIT_END_Y,154,68,40,14,ES_AUTOHSCROLL
+    LTEXT           "Start Angle Degrees",IDC_STATIC,10,89,67,8
+    EDITTEXT        IDC_EDIT_START_ANGLE,90,86,40,14,ES_AUTOHSCROLL
+    LTEXT           "End Angle Degrees",IDC_STATIC,10,106,63,8
+    EDITTEXT        IDC_EDIT_END_ANGLE,90,103,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_POLYFILLEDPROPERTIES DIALOGEX 0, 0, 147, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Filled Polygon Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,83,74,50,14
+    LTEXT           "Line Width",IDC_STATIC,17,16,35,8
+    LTEXT           "Line Color",IDC_STATIC,17,38,34,8
+    CONTROL         "",IDC_STATI_LINE_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,86,35,20,14
+    EDITTEXT        IDC_EDIT_LINEWIDTH,76,13,40,14,ES_AUTOHSCROLL
+    LTEXT           "Fill Color",IDC_STATIC,17,58,30,8
+    CONTROL         "",IDC_STATI_FILL_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,86,57,20,14
+END
+
+IDD_DIALOG_ARROW_ATTRIBUTES DIALOGEX 0, 0, 196, 96
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Arrow Head Attributes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,92,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,139,75,50,14
+    LTEXT           "Length L1",IDC_STATIC,13,12,32,8
+    LTEXT           "Length L2",IDC_STATIC,13,28,32,8
+    LTEXT           "Color",IDC_STATIC,13,46,18,8
+    EDITTEXT        IDC_EDIT_L1,50,9,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_L2,50,25,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,61,42,19,17
+    CONTROL         "",IDC_STATIC_PREVIEW,"Static",SS_BLACKFRAME,93,7,96,64
+    LTEXT           "Width",IDC_STATIC,13,67,20,8
+    EDITTEXT        IDC_EDIT_WIDTH,50,64,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SCHPART_PROP DIALOGEX 0, 0, 169, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Schematic Part Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,46,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,156,50,14
+    LTEXT           "Component Name",IDC_STATIC,10,16,59,8
+    LTEXT           "Reference Designator",IDC_STATIC,10,33,71,8
+    LTEXT           "Number of Units",IDC_STATIC,10,51,54,8
+    EDITTEXT        IDC_EDIT_PARTPROP_PARTNAME,90,13,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PARTPROP_REFENCEDES,90,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PARTPROP_UNITS,90,48,40,14,ES_AUTOHSCROLL
+    CONTROL         "Show Pin Names",IDC_CHECK_PARTPROP_SHOWPINNAMES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,76,71,10
+    CONTROL         "Show Pin Numbers",IDC_CHECK_PARTPROP_SHOWPINNUMBERS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,87,78,10
+    CONTROL         "Pin Names Inside",IDC_CHECK_PARTPROP_NAMEINSIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,98,72,10
+END
+
+IDD_DIALOG_SCHLIB_PROP DIALOGEX 0, 0, 221, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Schematic Library Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,42,61,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,62,50,14
+    LTEXT           "Library Name",IDC_STATIC,27,21,44,8
+    EDITTEXT        IDC_EDIT_NAME,98,18,110,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Jim Patchell"
+            VALUE "FileDescription", "JamCad, The free EDA package"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "JamCad.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "JamCad.exe"
+            VALUE "ProductName", "JamCad"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_FRONTCADUTIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG_PROPERTYEDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 401
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DIALOG_PIN_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG_TEXT_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_DIALOG_LINE_ATTRB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG_RECTPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_DIALOG_ELLIPSE_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG_POLYGONPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_DIALOG_ROUNDEDRECT_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_DIALOG_BITMAP_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_DIALOG_ARCPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_DIALOG_ARCCENTPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_DIALOG_POLYFILLEDPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_ARROW_ATTRIBUTES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG_SCHPART_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG_SCHLIB_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_FRONTCADUTIL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_PROPERTYEDITOR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_PIN_PROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_TEXT_PROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_LINE_ATTRB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_RECTPROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ELLIPSE_PROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_POLYGONPROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ROUNDEDRECT_PROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_BITMAP_PROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ARCPROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0
+END
+
+IDD_DIALOG_ARCCENTPROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0
+END
+
+IDD_DIALOG_POLYFILLEDPROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ARROW_ATTRIBUTES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_SCHPART_PROP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_SCHLIB_PROP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Project"
+    IDR_ProjectTYPE         "\nProject\nProject\nProject Files (*.jcproj)\n.jcproj\nProject.Document\nProject.Document"
+    IDR_JamCadSchType       "\nSchematic\nSchematic\nSchematic Files (*.jcsch)\n.jcsch\nSchematic.Document\nSchematic.Document"
+    IDR_JamCadLibType       "\nLibrary\nLibrary\nLibrary Files (*.jclib)\n.jclib\nLibrary.Document\nLibrary.Document"
+    IDR_FrontCad_TYPE       "\nFrontCad\nFrontCad\nFrontCad Files (*.fpc)\n.fpc\nFrontCAD.Document\nFrontCad.Document"
+    IDR_JamCadSchLibPart_TYPE 
+                            "\nSchematicPart\nSchematicPart\nSch Part Files (*.schLibPart)\n.schLibPart\nSchLibPart.Document\nSchLibPart.Document"
+    IDS_STRING135           "\nFrontCad\nFrontCad\nFrontCad Files (*.fpc)\n.fpc\nFrontCAD.Document\nFrontCad.Document"
+    IDR_JamCadPCB_TYPE      "\nPCB\nPCB\nPCB Files (*.jcpcb)\n.jcpcb\nPCB.Document\nPCB.Document"
+    IDR_JamCadPCBLib_TYPE   "string"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "JamCad"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_FILE_NEW_SCHEMATIC  "New Schematic"
+    IDM_FILE_NEW_LIB        "New Library"
+    IDM_FILE_NEW_FRONTPANEL "New Front Panel"
+    IDM_FILE_NEW_LIBRARY    "New Library"
+    IDM_SCH_PLACE_PART      "Place Part"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_SCH__PLACE_BUSS     "Place Buss"
+    IDM_SCH_PLACE_JUNCTION  "Place Junction"
+    IDM_SCH_PLACE_BUSENTRY  "Place Bus Entry"
+    IDM_SCH_PLACE_NETLABEL  "Place Net Label"
+    IDM_SCH_PLACE_POWER     "Place Power"
+    IDM_SCH_PLACE_SCHEMATIC "Place Schematic"
+    IDM_SCH_PLACE_PORT      "Place Port"
+    IDM_SCH_PLACE_SHEETPIN  "Place Sheet Pin"
+    IDM_SCH_PLACE_TEXT      "Place Text"
+    IDM_SCH_PLACE_LINE      "Place Line"
+    IDM_SCH_PLACE_RECT      "Place Rectangle"
+    IDM_SCH_PLACE_ELLISPE   "Place Ellispe"
+    IDM_SCH_PLACE_POLYGON   "Place Polygon"
+    IDM_SCH_PLACE_FILLEDPOLY "Place Filled Polygon"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_SCH_PLACE_BITMAP    "Place Bitmap Picture"
+    ID_BUTTON_ZOOMIN        "Zoom In"
+    ID_BUTTON_ZOOMOUT       "Zoom Out"
+    IDM_PLACE_LINE          "Place Line on Drawing"
+    IDM_PLACE_RECT          "Place Rectangle"
+    IDM_PLACE_ROUNDEDRECT   "Place Ropunded Rectangle"
+    IDM_PLACE_ELLISPE       "Place Ellipse"
+    IDM_PLACE_ARC           "Place Arc By Edges"
+    IDM_PLACE_ARCCENTER     "Place Arc by Center Point"
+    IDM_PLACE_POLYGON       "Place Polygon"
+    IDM_PLACE_POLYGONFILLED "Place a Filled Polygon"
+    IDM_PLACE_LIBPART       "Place a part from the library"
+    IDM_PLACE_BITMAP        "Place a Bitmap"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_PLACE_HOLEROUND     "Place a round hole"
+    IDM_PLACE_HOLE1FLAT     "Place hole with one flat side"
+    IDM_PLACE_ROUNDHOLE2FLAT "Place hole with two flat sides"
+    IDM_PLACE_RECTANGULARHOLE "Place a Rectangular Hole"
+    IDM_PLACE_ORIGIN        "Place Drawing Origin"
+    IDM_PLACE_DIMENSION     "Place a Dimension"
+    IDM_PLACE_PIN           "Place Component Pin"
+    IDM_PLACE_REFERENCE_POINT "Reference Point"
+    IDM_PLACE_RECTANGLE     "Place Rectangle"
+    IDM_PLACE_TEXT          "Place Text"
+    IDM_PLACE_ELLIPSE       "Place Ellipse"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_PLACE_ARROW         "Place Arrow Head"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\JamCad.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

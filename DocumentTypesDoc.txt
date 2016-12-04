@@ -1,0 +1,34 @@
+Document Templates for JamCad
+
+Schematic Project Type
+CJamCadProjDoc.......JamCadProjDoc.h/.cpp
+CChildFrame
+CJamCadProjView......JamCadProjView.h/.cpp
+
+Schematic Document Type
+CJamCadSchDoc.............JamCadSchDoc.h/.cpp
+CFrontCadChildFrame
+CJamCadSchView............JamCadSchView.h/.cpp
+
+Schematic Library Type
+CJamCadLibDoc..............JamCadLibDoc.h/.cpp
+CChildFrame.....................ChildFrame.h/.cpp
+CJamCadLibView.............JamCadLibView.h/.cpp
+
+PCB Document Type
+CPcbDoc...........................PcbDoc.h
+CFrontCadChildFrame
+CPcbView..........................PcbView.h
+
+Schematic Library Part Type
+CJamCadSchLibPartDoc...JamCadSchLibPartDoc.h/.cpp
+CFrontCadChildFrame
+CJamCadSchLibPartView...JamCadSchLibPartView.h/.cpp
+
+Front Cad Drawing Type
+CFrontCadDoc...................FrontCadDoc.h/.cpp
+CFrontCadChildFrame
+CFrontCadView.................FrontCadView.h/.cpp
+
+
+

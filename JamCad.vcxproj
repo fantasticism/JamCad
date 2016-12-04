@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B02DCF24-6F43-42B6-97E3-F46BC6B4C715}</ProjectGuid>
+    <RootNamespace>JamCad</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoScrollView.h" />
+    <ClInclude Include="CadArc.h" />
+    <ClInclude Include="CadArcCent.h" />
+    <ClInclude Include="CadArcPcb.h" />
+    <ClInclude Include="CadArrow.h" />
+    <ClInclude Include="CadBitmap.h" />
+    <ClInclude Include="CadBus.h" />
+    <ClInclude Include="CadBusEntry.h" />
+    <ClInclude Include="CadDimension.h" />
+    <ClInclude Include="CadElispe.h" />
+    <ClInclude Include="CadFillArea.h" />
+    <ClInclude Include="CadHoleRect.h" />
+    <ClInclude Include="CadHoleRnd1Flat.h" />
+    <ClInclude Include="CadHoleRnd2Flat.h" />
+    <ClInclude Include="CadHoleRound.h" />
+    <ClInclude Include="CadJunction.h" />
+    <ClInclude Include="CadLibComp.h" />
+    <ClInclude Include="CadLine.h" />
+    <ClInclude Include="CadObject.h" />
+    <ClInclude Include="CadOrigin.h" />
+    <ClInclude Include="CadPad.h" />
+    <ClInclude Include="CadPcbComp.h" />
+    <ClInclude Include="CadPin.h" />
+    <ClInclude Include="CadPolyFilled.h" />
+    <ClInclude Include="CadPolygon.h" />
+    <ClInclude Include="CadPower.h" />
+    <ClInclude Include="CadRect.h" />
+    <ClInclude Include="CadRndRect.h" />
+    <ClInclude Include="CadSchLib.h" />
+    <ClInclude Include="CadSchPart.h" />
+    <ClInclude Include="CadSheet.h" />
+    <ClInclude Include="CadSheetPin.h" />
+    <ClInclude Include="CadSheetPort.h" />
+    <ClInclude Include="CadText.h" />
+    <ClInclude Include="CadTrack.h" />
+    <ClInclude Include="CadVia.h" />
+    <ClInclude Include="CadWire.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ComboBitmap.h" />
+    <ClInclude Include="ComboBoxFontWeight.h" />
+    <ClInclude Include="ComboBoxItem.h" />
+    <ClInclude Include="DlgArcCentProperies.h" />
+    <ClInclude Include="DlgArcProperties.h" />
+    <ClInclude Include="DlgArrowProperties.h" />
+    <ClInclude Include="DlgBitmapProperties.h" />
+    <ClInclude Include="DlgEllispeProperties.h" />
+    <ClInclude Include="DlgLineAttributes.h" />
+    <ClInclude Include="DlgPinProp.h" />
+    <ClInclude Include="DlgPoloyProperties.h" />
+    <ClInclude Include="DlgPolyFilledProperties.h" />
+    <ClInclude Include="DlgRectProperties.h" />
+    <ClInclude Include="DlgRndRectProperties.h" />
+    <ClInclude Include="DlgSchLibProp.h" />
+    <ClInclude Include="DlgSchPartProp.h" />
+    <ClInclude Include="DlgTextProperties.h" />
+    <ClInclude Include="EditDecimal.h" />
+    <ClInclude Include="FrontCadChildFrame.h" />
+    <ClInclude Include="JamCadLibView.h" />
+    <ClInclude Include="JamCadPcbLibView.h" />
+    <ClInclude Include="JamCadSchLibPartDoc.h" />
+    <ClInclude Include="JamCadSchLibPartView.h" />
+    <ClInclude Include="MoveObjects.h" />
+    <ClInclude Include="MyBitmap.h" />
+    <ClInclude Include="MyListBox.h" />
+    <ClInclude Include="MyMultiDocTemplate.h" />
+    <ClInclude Include="PcbDoc.h" />
+    <ClInclude Include="PcbDwg.h" />
+    <ClInclude Include="PcbLibDoc.h" />
+    <ClInclude Include="PcbLibDwg.h" />
+    <ClInclude Include="PcbLibView.h" />
+    <ClInclude Include="PcbView.h" />
+    <ClInclude Include="PropInt.h" />
+    <ClInclude Include="PropSelInt.h" />
+    <ClInclude Include="PropSelString.h" />
+    <ClInclude Include="PropString.h" />
+    <ClInclude Include="RulerCornerView.h" />
+    <ClInclude Include="RulerView.h" />
+    <ClInclude Include="FrontCadDoc.h" />
+    <ClInclude Include="FrontCadDwg.h" />
+    <ClInclude Include="FrontCadView.h" />
+    <ClInclude Include="JamCadLibDoc.h" />
+    <ClInclude Include="JamSch.h" />
+    <ClInclude Include="Lexer.h" />
+    <ClInclude Include="JamCad.h" />
+    <ClInclude Include="JamCadDefines.h" />
+    <ClInclude Include="JamCadProjDoc.h" />
+    <ClInclude Include="JamCadProjView.h" />
+    <ClInclude Include="JamCadSchDoc.h" />
+    <ClInclude Include="JamCadSchView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Prop.h" />
+    <ClInclude Include="PropertyEditor.h" />
+    <ClInclude Include="PropertyEditorDlg.h" />
+    <ClInclude Include="PropField.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RulerSplitterWindow.h" />
+    <ClInclude Include="Scale.h" />
+    <ClInclude Include="StaticBitmap.h" />
+    <ClInclude Include="StaticPreview.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArcTan.cpp" />
+    <ClCompile Include="AutoScrollView.cpp" />
+    <ClCompile Include="CadArc.cpp" />
+    <ClCompile Include="CadArcCent.cpp" />
+    <ClCompile Include="CadArcPcb.cpp" />
+    <ClCompile Include="CadArrow.cpp" />
+    <ClCompile Include="CadBitmap.cpp" />
+    <ClCompile Include="CadBus.cpp" />
+    <ClCompile Include="CadBusEntry.cpp" />
+    <ClCompile Include="CadDimension.cpp" />
+    <ClCompile Include="CadElispe.cpp" />
+    <ClCompile Include="CadFillArea.cpp" />
+    <ClCompile Include="CadHoleRect.cpp" />
+    <ClCompile Include="CadHoleRnd1Flat.cpp" />
+    <ClCompile Include="CadHoleRnd2Flat.cpp" />
+    <ClCompile Include="CadHoleRound.cpp" />
+    <ClCompile Include="CadJunction.cpp" />
+    <ClCompile Include="CadLibComp.cpp" />
+    <ClCompile Include="CadLine.cpp" />
+    <ClCompile Include="CadObject.cpp" />
+    <ClCompile Include="CadOrigin.cpp" />
+    <ClCompile Include="CadPad.cpp" />
+    <ClCompile Include="CadPcbComp.cpp" />
+    <ClCompile Include="CadPin.cpp" />
+    <ClCompile Include="CadPolyFilled.cpp" />
+    <ClCompile Include="CadPolygon.cpp" />
+    <ClCompile Include="CadPower.cpp" />
+    <ClCompile Include="CadRect.cpp" />
+    <ClCompile Include="CadRndRect.cpp" />
+    <ClCompile Include="CadSchLib.cpp" />
+    <ClCompile Include="CadSchPart.cpp" />
+    <ClCompile Include="CadSheet.cpp" />
+    <ClCompile Include="CadSheetPin.cpp" />
+    <ClCompile Include="CadSheetPort.cpp" />
+    <ClCompile Include="CadText.cpp" />
+    <ClCompile Include="CadTrack.cpp" />
+    <ClCompile Include="CadVia.cpp" />
+    <ClCompile Include="CadWire.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ComboBitmap.cpp" />
+    <ClCompile Include="ComboBoxFontWeight.cpp" />
+    <ClCompile Include="ComboBoxItem.cpp" />
+    <ClCompile Include="DlgArcCentProperies.cpp" />
+    <ClCompile Include="DlgArcProperties.cpp" />
+    <ClCompile Include="DlgArrowProperties.cpp" />
+    <ClCompile Include="DlgBitmapProperties.cpp" />
+    <ClCompile Include="DlgEllispeProperties.cpp" />
+    <ClCompile Include="DlgLineAttributes.cpp" />
+    <ClCompile Include="DlgPinProp.cpp" />
+    <ClCompile Include="DlgPoloyProperties.cpp" />
+    <ClCompile Include="DlgPolyFilledProperties.cpp" />
+    <ClCompile Include="DlgRectProperties.cpp" />
+    <ClCompile Include="DlgRndRectProperties.cpp" />
+    <ClCompile Include="DlgSchLibProp.cpp" />
+    <ClCompile Include="DlgSchPartProp.cpp" />
+    <ClCompile Include="DlgTextProperties.cpp" />
+    <ClCompile Include="EditDecimal.cpp" />
+    <ClCompile Include="FrontCadChildFrame.cpp" />
+    <ClCompile Include="FrontCadDoc.cpp" />
+    <ClCompile Include="FrontCadDwg.cpp" />
+    <ClCompile Include="FrontCadView.cpp" />
+    <ClCompile Include="JamCad.cpp" />
+    <ClCompile Include="JamCadLibDoc.cpp" />
+    <ClCompile Include="JamCadLibView.cpp" />
+    <ClCompile Include="JamCadPcbLibView.cpp" />
+    <ClCompile Include="JamCadProjDoc.cpp" />
+    <ClCompile Include="JamCadProjView.cpp" />
+    <ClCompile Include="JamCadSchDoc.cpp" />
+    <ClCompile Include="JamCadSchLibPartDoc.cpp" />
+    <ClCompile Include="JamCadSchLibPartView.cpp" />
+    <ClCompile Include="JamCadSchView.cpp" />
+    <ClCompile Include="JamSch.cpp" />
+    <ClCompile Include="Lexer.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MoveObjects.cpp" />
+    <ClCompile Include="MyBitmap.cpp" />
+    <ClCompile Include="MyListBox.cpp" />
+    <ClCompile Include="MyMultiDocTemplate.cpp" />
+    <ClCompile Include="PcbDoc.cpp" />
+    <ClCompile Include="PcbDwg.cpp" />
+    <ClCompile Include="PcbLibDoc.cpp" />
+    <ClCompile Include="PcbLibDwg.cpp" />
+    <ClCompile Include="PcbLibView.cpp" />
+    <ClCompile Include="PcbView.cpp" />
+    <ClCompile Include="Prop.cpp" />
+    <ClCompile Include="PropertyEditor.cpp" />
+    <ClCompile Include="PropertyEditorDlg.cpp" />
+    <ClCompile Include="PropField.cpp" />
+    <ClCompile Include="PropInt.cpp" />
+    <ClCompile Include="PropSelInt.cpp" />
+    <ClCompile Include="PropSelString.cpp" />
+    <ClCompile Include="PropString.cpp" />
+    <ClCompile Include="RulerCornerView.cpp" />
+    <ClCompile Include="RulerSplitterWindow.cpp" />
+    <ClCompile Include="RulerView.cpp" />
+    <ClCompile Include="Scale.cpp" />
+    <ClCompile Include="StaticBitmap.cpp" />
+    <ClCompile Include="StaticPreview.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JamCad.reg" />
+    <None Include="res\JamCad.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JamCad.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\Clock.bmp" />
+    <Image Include="res\ClockInv.bmp" />
+    <Image Include="res\ClockInverted.bmp" />
+    <Image Include="res\DotLine.bmp" />
+    <Image Include="res\FrontCadToolBar.bmp" />
+    <Image Include="res\JamCad.ico" />
+    <Image Include="res\JamCadDoc.ico" />
+    <Image Include="res\Line.bmp" />
+    <Image Include="res\LineInv.bmp" />
+    <Image Include="res\mainfram.bmp" />
+    <Image Include="res\PinDown.bmp" />
+    <Image Include="res\pinleft.bmp" />
+    <Image Include="res\pinRight.bmp" />
+    <Image Include="res\PinUp.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="JamCad.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
